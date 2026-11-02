@@ -44,7 +44,7 @@ const Error = () => {
           </div>
 
           {/* Error Details (if in development) */}
-          {process.env.NODE_ENV === 'development' && error && (
+          {import.meta.env.DEV && error && (
             <div className="mt-8 p-4 rounded-lg bg-gray-100 dark:bg-gray-800/50 text-left">
               <pre className="text-sm text-gray-700 dark:text-gray-300 overflow-auto">
                 {JSON.stringify(error, null, 2)}

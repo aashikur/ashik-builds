@@ -4,7 +4,7 @@ import { MoveRight } from 'lucide-react'; // Icons from lucide-react library
 import { GiPolarStar } from "react-icons/gi"; // Polar star icon from react-icons
 
 import MyBadge from '@/components/ui/MyBadge'; // Custom badge component
-import projectsData from '@/data/projectsData'; // Data containing all projects info
+import projectsData from '@/data/ProjectsData.json'; // Data containing all projects info
 import Section from '@/components/ui/Section';
 import Card2 from '@/components/ui/Card2';
 import Card from '@/components/ui/Card';
