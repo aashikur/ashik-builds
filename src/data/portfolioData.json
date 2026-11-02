@@ -1,13 +1,14 @@
 {
   "personalInfo": {
     "fullName": "Ashikur Rahaman",
-    "title": "Web Developer | Full-Stack Developer | WordPress Expert",
+    "title": "Web Developer | Full-Stack Developer | UI/UX Specialist",
     "location": "Dhaka, Bangladesh",
-    "email": "your.email@example.com",
-    "phone": "+8801XXXXXXXXX",
-    "website": "https://your-website.com",
-    "linkedin": "https://linkedin.com/in/ashikur-rahaman",
-    "github": "https://github.com/yourusername",
+    "email": "mdaashikur@gmail.com",
+    "phone": "+8801580563883",
+    "website": "https://ashik-builds.vercel.app/",
+    "avatar": "/assets/images/me.jpg",
+    "linkedin": "https://www.linkedin.com/in/mdaashikur/",
+    "github": "https://github.com/aashikur",
     "instagram": "https://instagram.com/BetterMe",
     "youtube": "https://youtube.com/@RehmanAshik"
   },
@@ -46,42 +47,32 @@
   ],
   "projects": [
     {
-      "name": "Portfolio Website – Sung Jin-Woo (Solo Leveling)",
-      "tech": ["React", "Tailwind CSS"],
-      "description": "Anime-inspired personal portfolio site with interactive UI and reusable components."
+      "name": "AuctionG - Real-Time Bidding Platform",
+      "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Stripe API"],
+      "description": "Full-stack real-time auction platform with live bidding, secure Stripe checkout, and seller trust verification."
     },
     {
-      "name": "E-Commerce Platform",
-      "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
-      "description": "Full-stack e-commerce app with cart, payment gateway, and admin panel."
-    },
-    {
-      "name": "Custom WordPress Website for Local Business",
-      "tech": ["WordPress", "Elementor", "PHP"],
-      "description": "Fully customized, SEO-optimized website for a small business."
-    },
-    {
-      "name": "JavaScript Learning Journey (21 Days)",
-      "tech": ["JavaScript", "DOM Manipulation"],
-      "description": "Documented learning progress with coding examples and mini-projects."
+      "name": "TaskMaster - Team Collaboration App",
+      "tech": ["React", "Redux", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
+      "description": "Collaborative task management application with real-time kanban workflow and deadline tracking."
     }
   ],
   "education": [
     {
-      "degree": "B.Sc. in Your Field",
-      "institution": "Your University Name",
-      "year": "Start Year – Present"
+      "degree": "B.Sc. in Computer Science & Engineering",
+      "institution": "University in Bangladesh",
+      "year": "Present"
     }
   ],
   "certifications": [
-    "JavaScript Basics – Platform Name",
-    "React.js Fundamentals – Platform Name",
-    "WordPress Development – Platform Name"
+    "Complete Web Development (MERN Stack)",
+    "React.js Fundamentals & Advanced Patterns",
+    "WordPress Theme Development & Customization"
   ],
   "achievements": [
-    "Completed 60-Day Workout Challenge alongside full-time work and coding.",
-    "Built personal brand 'BetterMe' on Instagram to inspire fitness and self-improvement.",
-    "Organized orientation program for programming club Batch 15."
+    "Delivered 12+ production client web apps and scheduling tools.",
+    "Built personal brand 'BetterMe' to inspire fitness and self-improvement.",
+    "Organized orientation program for programming community Batch 15."
   ],
   "hobbies": [
     "Calisthenics & Fitness Challenges",

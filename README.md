@@ -2,7 +2,7 @@
 
 ## 🌐 Live Site
 
-- **Frontend:** [https://ashikurdevx.web.app/](https://ashikurdevx.web.app/)
+- **Frontend:** [https://ashik-builds.vercel.app/](https://ashik-builds.vercel.app/)
 
 ---
 

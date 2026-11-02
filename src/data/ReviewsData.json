@@ -1,0 +1,62 @@
+[
+  {
+    "id": "rev-1",
+    "name": "Katherine Johnson",
+    "title": "Event Coordinator, The Big Retreat Festival",
+    "avatar": "/assets/images/1.jpg",
+    "reviewText": "Ashik delivered an exceptional scheduling tool for our festival. The interface was smooth, filters worked flawlessly, and the printable view was a game changer for attendees. His attention to detail and user-focused design really stood out.",
+    "rating": 5,
+    "isVerified": true,
+    "highlight": false,
+    "type": "text",
+    "videoUrl": null
+  },
+  {
+    "id": "rev-2",
+    "name": "Michael Reynolds",
+    "title": "Marketing Manager, NES Power Systems",
+    "avatar": "/assets/images/2.jpg",
+    "reviewText": "High-performing landing page for our email campaign that perfectly balanced technical detail with user-friendly design. The mobile optimization and smooth navigation truly enhanced engagement.",
+    "rating": 5,
+    "isVerified": true,
+    "highlight": true,
+    "type": "text",
+    "videoUrl": null
+  },
+  {
+    "id": "rev-3",
+    "name": "Benjamin Smith",
+    "title": "CEO, Manna Bitcoin Wallet",
+    "avatar": "/assets/images/1.jpg",
+    "reviewText": "Ashik provided good quality work. He was very fast and knowledgeable. He responded quickly and was always available. I would definitely hire him again.",
+    "rating": 5,
+    "isVerified": true,
+    "highlight": false,
+    "type": "text",
+    "videoUrl": null
+  },
+  {
+    "id": "rev-4",
+    "name": "Lina Alvarez",
+    "title": "Founder, GreenLeaf E-commerce",
+    "avatar": "/assets/images/2.jpg",
+    "reviewText": "Our MERN-based e-commerce website was delivered ahead of schedule and exceeded expectations. The checkout process is flawless, and the dashboard gives us full control over products and orders. Very impressed with Ashik's expertise!",
+    "rating": 5,
+    "isVerified": true,
+    "highlight": false,
+    "type": "text",
+    "videoUrl": null
+  },
+  {
+    "id": "rev-5",
+    "name": "Rajiv Menon",
+    "title": "Product Manager, TechNova SaaS Solutions",
+    "avatar": "/assets/images/1.jpg",
+    "reviewText": "Ashik built a fully functional SaaS dashboard for our analytics tool. The performance optimization and responsive UI were top-notch. Communication was smooth throughout, and he proactively suggested improvements that made the product stronger.",
+    "rating": 5,
+    "isVerified": true,
+    "highlight": true,
+    "type": "text",
+    "videoUrl": null
+  }
+]

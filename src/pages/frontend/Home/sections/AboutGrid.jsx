@@ -53,12 +53,12 @@ const BentoCard = ({ name, description, Icon, cta, href, className, background }
     <div className="absolute inset-0">{background}</div>
     <div className="relative z-10 bottom">
     </div>
-    <div className="relative z-10  translate-y-15 transition-all duration-300 group-hover:translate-y-0">
+    <div className="relative z-10 translate-y-15 transition-all duration-300 group-hover:translate-y-0">
       <Icon className="w-8 h-8 mb-2 text-gray-800 dark:text-gray-200" />
-      <h3 className=" font-semibold text-base text-gray-500 dark:text-[#a1a1a1]">{name}</h3>
-      <p className=" text-gray-600 pb-6 font-semibold pt-1 text-xl  dark:text-[#d4d4d4]">{description}</p>
+      <h3 className="font-semibold text-base text-gray-500 dark:text-[#a1a1a1]">{name}</h3>
+      <p className="text-gray-600 pb-6 font-semibold pt-1 text-xl dark:text-[#d4d4d4]">{description}</p>
 
-      <a href={href} className=" flex items-center  gap-4 font-medium hover:underline">
+      <a href={href} className="flex items-center gap-4 font-medium hover:underline">
         {cta} <MoveRight className="w-4 h-4" />
       </a>
     </div>
@@ -72,9 +72,9 @@ export default function BentoGridCom() {
       description: "I prioritize client collaboration, fostering open communications.",
       Icon: BoxIcon,
       cta: "Connect with Ashik",
-      href: "#",
-      className: "md:col-span-2 ", // Large screens: spans 2 columns
-      background: <div className="absolute inset-0 group " >
+      href: "#aboutMeSection",
+      className: "md:col-span-2", // Large screens: spans 2 columns
+      background: <div className="absolute inset-0 group" >
         <div className="flex justify-center items-center h-full">
           {/* X Organizations Black Background with Top Glow */}
           <div
@@ -83,9 +83,11 @@ export default function BentoGridCom() {
               background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(120, 180, 255, 0.25), transparent 70%), #000000",
             }}
           />
-          <img className="w-40 group-hover:-translate-y-15 transition-all duration-300 z-10 bg-white/10 border border-white/15 p-1.5  rounded-full "
-
-            src="public/assets/images/hero3.jpg" alt="" />
+          <img 
+            className="w-40 h-40 object-cover group-hover:-translate-y-15 transition-all duration-300 z-10 bg-white/10 border border-white/15 p-1.5 rounded-full"
+            src="/assets/images/me.jpg" 
+            alt="Ashikur Rahaman" 
+          />
         </div>
       </div>,
     },
@@ -93,7 +95,7 @@ export default function BentoGridCom() {
       name: "",
       Icon: BoxIcon,
       cta: "View All Projects",
-      href: "#",
+      href: "#projectsSection",
       className: "row-span-2 md:row-span-2", // Large screens: spans 2 rows
       background: <div className="absolute inset-0" >
         <AboutMarque />
@@ -104,7 +106,7 @@ export default function BentoGridCom() {
       description: "Bangladesh",
       Icon: BoxIcon,
       cta: "Connect Now",
-      href: "#",
+      href: "#contactSection",
       className: "row-span-2 md:row-span-2", // Large screens: spans 2 rows
       background: <div className="absolute inset-0 bg-blue-100" >
         <Global />
@@ -126,7 +128,7 @@ export default function BentoGridCom() {
       description: "Currently planing SaaS Product & Banking Cash Solution.",
       Icon: BoxIcon,
       cta: "View Recent Work",
-      href: "#",
+      href: "#projectsSection",
       className: "md:col-span-2",
       background: <div className="absolute inset-0 bg-red-100" >
 

@@ -64,9 +64,9 @@ const CTAGetInTouch = () => {
             <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center gap-y-8">
                     <img
-                        className="h-16 w-16 rounded-full object-cover shadow-lg"
-                        src="/assets/images/hero3.jpg"
-                        alt="Profile"
+                        className="h-16 w-16 rounded-full object-cover shadow-lg border border-white/20"
+                        src="/assets/images/me.jpg"
+                        alt="Ashikur Rahaman"
                     />
 
                     <div className="flex flex-col gap-y-4">
@@ -83,8 +83,8 @@ const CTAGetInTouch = () => {
                     </p>
 
                     <div className="mt-6">
-                       <a target='_blank' className='**:cursor-pointer' href="https://wa.me/+08801580563883">
-                         <MagneticButton className="group ">
+                       <a target='_blank' rel='noreferrer' className='cursor-pointer' href="https://wa.me/+08801580563883">
+                         <MagneticButton className="group">
                             <span className='z-10 group-hover:text-white'>GET IN TOUCH</span>
                             <ArrowRight className="text-gray-900 transition-transform duration-300 group-hover:rotate-[-30deg] dark:text-white" size={24} />
                         </MagneticButton>
