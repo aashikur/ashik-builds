@@ -57,7 +57,7 @@ export default function ProjectDetails() {
       {/* Top Navigation / Breadcrumbs */}
       <div className="flex items-center justify-between mb-8 pb-4 border-b border-gray-800">
         <Link
-          to="/"
+          to="/#projectsSection"
           className="inline-flex items-center gap-2 text-sm text-gray-400 hover:text-white transition group"
         >
           <ArrowLeft className="w-4 h-4 transition-transform group-hover:-translate-x-1" />
@@ -267,7 +267,7 @@ export default function ProjectDetails() {
         )}
 
         <Link
-          to="/"
+          to="/#projectsSection"
           className="text-xs font-mono text-gray-500 hover:text-gray-300 transition"
         >
           All Projects
