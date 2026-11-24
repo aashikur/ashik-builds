@@ -12,10 +12,10 @@ const DotIcon = () => <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xm
 </svg>;
 const coderData = {
   name: 'Ashikur Rahaman',
-  role: 'Full-Stack Developer',
-  seniority: 'Mid-Level',
+  role: 'Full-Stack Software Developer',
+  seniority: 'Software Engineer',
   location: 'Bangladesh',
-  skills: ['React', 'Next.js', 'JavaScript', 'TypeScript', 'TailwindCSS', 'CSS', 'Figma', 'GitHub', 'HTML', 'Astro', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'Git', '...']
+  skills: ['Next.js', 'React', 'TypeScript', 'Node.js', 'PostgreSQL', 'MongoDB', 'Drizzle ORM', 'TailwindCSS', 'Better Auth', 'Dexie.js', 'Cloudflare R2']
 };
 const CoderProfileCard = () => {
   return (

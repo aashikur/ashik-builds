@@ -1,60 +1,151 @@
 [
   {
     "id": 1,
-    "title": "AuctionG",
+    "slug": "aurem",
+    "title": "Aurem",
+    "fullName": "Aurem — Headless E-Commerce Platform",
+    "tagline": "Configurable multi-store e-commerce platform and merchant dashboard",
+    "category": "Full-Stack · E-Commerce",
     "indicatorColor": "pink-500",
-    "description": "AuctionG is an online auction platform where users can list, bid, and purchase items in real time. It supports live bid updates, secure payments, and seller verification to ensure trust between buyers and sellers.",
-    "image": "/assets/images/1.jpg",
+    "image": "/assets/images/projects/aurem.svg",
+    "description": "Aurem is a configurable multi-store e-commerce platform and merchant dashboard built for high-concurrency order handling, automated logistics, and lightning-fast storefront performance.",
+    "longDescription": "Aurem was architected from the ground up to solve critical merchant pain points: race-condition overselling during flash sales, clunky third-party courier dispatch, and slow client-side page loads. Built with Next.js 16 App Router, React 19, and MongoDB, it features atomic inventory updates, role-based session auth with Better Auth, and a media pipeline powered by Cloudflare R2.",
     "features": [
-      { "iconKey": "star-pink", "text": "Real-time bidding system with WebSocket support." },
-      { "iconKey": "star-pink", "text": "Secure payment integration using Stripe API." },
-      { "iconKey": "star-pink", "text": "User profiles with ratings and transaction history." }
+      { "iconKey": "star-pink", "text": "Atomic inventory locks to prevent overselling during checkout spikes." },
+      { "iconKey": "star-pink", "text": "Role-based admin & customer sessions using Better Auth HTTP-only cookies." },
+      { "iconKey": "star-pink", "text": "Automated courier dispatch integration via Steadfast API with address validation." },
+      { "iconKey": "star-pink", "text": "High-throughput media pipeline using Cloudflare R2 with image optimization." }
+    ],
+    "challengesSolved": [
+      "Atomic Inventory Locking: Prevented stock overselling under concurrent checkouts by replacing read-then-write loops with atomic decrement operators with conditional bounds ($gte).",
+      "Enterprise Session Security: Implemented Better Auth for secure, tamper-proof session persistence across merchant subdomains using HTTP-only cookies.",
+      "Automated Logistics Flow: Integrated Steadfast Courier API directly inside the fulfillment pipeline, eliminating manual tracking number entries."
     ],
     "badges": [
-      { "iconKey": "react", "text": "ReactJS" },
-      { "iconKey": "redux", "text": "Redux" },
-      { "iconKey": "javascript", "text": "JavaScript" },
-      { "iconKey": "tailwind", "text": "TailwindCSS" },
-      { "iconKey": "bootstrap", "text": "Bootstrap" },
-      { "iconKey": "node", "text": "NodeJS" },
-      { "iconKey": "express", "text": "ExpressJS" },
+      { "iconKey": "nextjs", "text": "Next.js 16" },
+      { "iconKey": "react", "text": "React 19" },
+      { "iconKey": "typescript", "text": "TypeScript" },
       { "iconKey": "mongodb", "text": "MongoDB" },
-      { "iconKey": "vscode", "text": "VS Code" },
-      { "iconKey": "git", "text": "Git" }
-    ], 
-      "github": {
-          "frontend": "https://github.com/yourusername/auctiong-frontend",
-          "backend": "https://github.com/yourusername/auctiong-backend"
-  },
-  "live": "https://auctiong-live-url.com"
+      { "iconKey": "cloudflare", "text": "Cloudflare R2" },
+      { "iconKey": "tailwind", "text": "TailwindCSS" }
+    ],
+    "live": "https://ecommerce.ashikbuilds.app",
+    "github": {
+      "frontend": "https://github.com/aashikur",
+      "backend": "https://github.com/aashikur"
+    }
   },
   {
     "id": 2,
-    "title": "TaskMaster",
-    "indicatorColor": "blue-500",
-    "description": "TaskMaster is a collaborative task management app designed for teams and individuals. It helps users create tasks, assign them to team members, set deadlines, and track progress in real time.",
-    "image": "assets/images/2.jpg",
+    "slug": "cashbook",
+    "title": "CashBook",
+    "fullName": "CashBook — Offline-First Financial Ledger (PWA)",
+    "tagline": "Progressive Web App built for local-first speed with background cloud synchronization",
+    "category": "Full-Stack · Fintech / PWA",
+    "indicatorColor": "emerald-500",
+    "image": "/assets/images/projects/cashbook.svg",
+    "description": "CashBook is an expense and financial ledger tracking progressive web app built for local-first instant input with automated background cloud synchronization and zero floating-point discrepancies.",
+    "longDescription": "Traditional ledger apps require an active internet connection, causing annoying latency when logging transactions on the go. CashBook solves this by implementing a true local-first architecture powered by Dexie.js and IndexedDB, backed by PostgreSQL, Neon serverless, and Drizzle ORM. Users can log hundreds of entries in zero-connectivity areas, which seamlessly sync via idempotent delta-queues upon reconnecting.",
     "features": [
-      { "iconKey": "star-blue", "text": "Create, assign, and track tasks with priority levels." },
-      { "iconKey": "star-blue", "text": "Built-in Kanban board for visual workflow management." },
-      { "iconKey": "star-blue", "text": "Real-time notifications for task updates and deadlines." }
+      { "iconKey": "star-blue", "text": "Local-first architecture using Dexie.js & IndexedDB with zero network latency." },
+      { "iconKey": "star-blue", "text": "Background sync engine with delta-sync and idempotency keys to resolve conflicts." },
+      { "iconKey": "star-blue", "text": "Currency stored in integer units (cents/paisa) to eliminate floating-point calculation errors." },
+      { "iconKey": "star-blue", "text": "PostgreSQL schema designed with Drizzle ORM using composite indexes." }
+    ],
+    "challengesSolved": [
+      "Zero-Latency Offline Recording: Built client-side transactional models using IndexedDB, enabling instant UI feedback regardless of network state.",
+      "Idempotent Delta-Sync: Devised a deterministic reconciliation engine using monotonic timestamps and client-generated UUIDs that guarantees zero duplicate transactions.",
+      "Financial Precision: Strictly mandated integer arithmetic throughout database schemas and API layers, eradicating standard JavaScript floating-point roundoff issues."
     ],
     "badges": [
-      { "iconKey": "react", "text": "ReactJS" },
-      { "iconKey": "redux", "text": "Redux" },
-      { "iconKey": "javascript", "text": "JavaScript" },
-      { "iconKey": "tailwind", "text": "TailwindCSS" },
-      { "iconKey": "node", "text": "NodeJS" },
-      { "iconKey": "express", "text": "ExpressJS" },
-      { "iconKey": "mongodb", "text": "MongoDB" },
-      { "iconKey": "vscode", "text": "VS Code" },
-      { "iconKey": "git", "text": "Git" }
+      { "iconKey": "nextjs", "text": "Next.js 15" },
+      { "iconKey": "react", "text": "React 19" },
+      { "iconKey": "typescript", "text": "TypeScript" },
+      { "iconKey": "postgresql", "text": "PostgreSQL" },
+      { "iconKey": "drizzle", "text": "Drizzle ORM" },
+      { "iconKey": "zod", "text": "Zod" },
+      { "iconKey": "tailwind", "text": "TailwindCSS" }
     ],
-      "github": {
-         "frontend": "https://github.com/yourusername/auctiong-frontend",
-         "backend": "https://github.com/yourusername/auctiong-backend"
+    "live": "https://cashbook.ashikbuilds.app/",
+    "github": {
+      "frontend": "https://github.com/aashikur",
+      "backend": "https://github.com/aashikur"
+    }
   },
-  "live": "https://auctiong-live-url.com"
+  {
+    "id": 3,
+    "slug": "vectorfitlab",
+    "title": "VectorFitLab",
+    "fullName": "VectorFitLab — Fitness LMS & Digital Commerce",
+    "tagline": "Training platform for coaches and athletes with video courses, scheduling, and enrollment",
+    "category": "Full-Stack · EdTech & Commerce",
+    "indicatorColor": "amber-500",
+    "image": "/assets/images/projects/vectorfitlab.svg",
+    "description": "VectorFitLab is an all-in-one training and educational platform for fitness professionals, featuring secure Vimeo video streaming, automated SSLCommerz payments, and role-based training programs.",
+    "longDescription": "Designed to provide fitness coaches with a professional direct-to-consumer platform, VectorFitLab incorporates high-throughput resumable video uploads, course module progress gating, and real-time coupon calculation. Built using Next.js 16, Redux Toolkit, Express, MongoDB, and Zod validation.",
+    "features": [
+      { "iconKey": "star-pink", "text": "Video delivery infrastructure using Vimeo APIs with resumable TUS uploads." },
+      { "iconKey": "star-pink", "text": "Payment gateway integration with SSLCommerz, coupon validation, and IPN webhooks." },
+      { "iconKey": "star-pink", "text": "Role-based route protection for Admins, Trainers, and Athletes with HTTP-only cookies." },
+      { "iconKey": "star-pink", "text": "Strict runtime request payload and response validation with Zod." }
+    ],
+    "challengesSolved": [
+      "Resumable Video Ingestion: Built a TUS client integration with Vimeo API to permit large 4K workout video uploads with auto-resume on connection drops.",
+      "Multi-Role Permission Guarding: Structured hierarchical JWT middleware guaranteeing athlete records are only readable by their assigned certified trainers and admins.",
+      "Robust Payment Verification: Configured SSLCommerz IPN (Instant Payment Notification) listener with signature verification to prevent spoofed purchase confirmations."
+    ],
+    "badges": [
+      { "iconKey": "nextjs", "text": "Next.js 16" },
+      { "iconKey": "react", "text": "React 19" },
+      { "iconKey": "typescript", "text": "TypeScript" },
+      { "iconKey": "node", "text": "Node.js" },
+      { "iconKey": "express", "text": "Express" },
+      { "iconKey": "mongodb", "text": "MongoDB" },
+      { "iconKey": "redux", "text": "Redux Toolkit" },
+      { "iconKey": "zod", "text": "Zod" }
+    ],
+    "live": "https://vectorfitlab.com",
+    "github": {
+      "frontend": "https://github.com/aashikur/vectorfitlab-client",
+      "backend": "https://github.com/aashikur/vectorfitlab-server"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "redlabstudio",
+    "title": "RedLabStudio",
+    "fullName": "RedLabStudio — Video Course LMS",
+    "tagline": "Learning management platform built for client delivery, online course administration, and student tracking",
+    "category": "Full-Stack · EdTech Platform",
+    "indicatorColor": "red-500",
+    "image": "/assets/images/projects/redlabstudio.svg",
+    "description": "RedLabStudio is a full-featured video course academy platform with structured modules, automated certificate issuing, Tiptap rich-text course creation, and SSLCommerz checkout.",
+    "longDescription": "Built to deliver a frictionless learning experience, RedLabStudio enables instructors to create interactive courses with rich-text lessons, attachments, and gated chapter progression. When students complete all required modules, verified certificates are generated dynamically.",
+    "features": [
+      { "iconKey": "star-blue", "text": "Multi-role permission system covering Admins, Instructors, and Students." },
+      { "iconKey": "star-blue", "text": "Video lesson streaming, module ordering, and lesson progress tracking." },
+      { "iconKey": "star-blue", "text": "Course purchase workflows with SSLCommerz, automated enrollment, and coupon codes." },
+      { "iconKey": "star-blue", "text": "Tiptap rich-text editor integration for course material and certificates." }
+    ],
+    "challengesSolved": [
+      "Custom Rich-Text Lesson Authoring: Integrated and customized Tiptap editor with syntax highlighting, custom callout blocks, and video embeds.",
+      "Progress Progression Gating: Engineered course progress calculation that unlocks sequential modules only after prerequisite video lessons are marked complete.",
+      "Automated Certificate Generation: Developed an automated certificate templating engine that stamps student name, verification ID, and issuance date upon 100% course completion."
+    ],
+    "badges": [
+      { "iconKey": "nextjs", "text": "Next.js 16" },
+      { "iconKey": "react", "text": "React 19" },
+      { "iconKey": "typescript", "text": "TypeScript" },
+      { "iconKey": "node", "text": "Node.js" },
+      { "iconKey": "express", "text": "Express" },
+      { "iconKey": "mongodb", "text": "MongoDB" },
+      { "iconKey": "redux", "text": "Redux Toolkit" },
+      { "iconKey": "tailwind", "text": "TailwindCSS" }
+    ],
+    "live": "https://redlabstudio.com",
+    "github": {
+      "frontend": "https://github.com/aashikur/redlabstudio-client",
+      "backend": "https://github.com/aashikur/redlabstudio-server"
+    }
   }
-  
 ]

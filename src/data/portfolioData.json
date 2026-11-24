@@ -1,87 +1,91 @@
 {
   "personalInfo": {
     "fullName": "Ashikur Rahaman",
-    "title": "Web Developer | Full-Stack Developer | UI/UX Specialist",
-    "location": "Dhaka, Bangladesh",
+    "title": "Full-Stack Software Developer",
+    "subtitle": "Next.js · React · Node.js · PostgreSQL · MongoDB",
+    "location": "Bangladesh",
     "email": "mdaashikur@gmail.com",
     "phone": "+8801580563883",
-    "website": "https://ashik-builds.vercel.app/",
+    "website": "https://www.ashikbuilds.app/",
     "avatar": "/assets/images/me.jpg",
-    "linkedin": "https://www.linkedin.com/in/mdaashikur/",
-    "github": "https://github.com/aashikur",
-    "instagram": "https://instagram.com/BetterMe",
-    "youtube": "https://youtube.com/@RehmanAshik"
+    "linkedin": "https://linkedin.com/in/mdaashikur",
+    "github": "https://github.com/aashikur"
   },
-  "aboutMe": "I’m a passionate full-stack web developer with expertise in creating clean, responsive, and high-performance web solutions. Skilled in React, Tailwind CSS, Node.js, Express, MongoDB, and WordPress, I combine creativity with functionality. I’m also a content creator and entrepreneur, aiming to build a service-based business in web development and video editing. I value trust, quality, and user-focused design in all my work.",
+  "aboutMe": "I am a full-stack developer based in Bangladesh. I build web applications with React, Next.js, and Node.js, focusing on backend architecture, authentication, database design, and real-world business workflows. Most of my work involves building complete platforms from scratch — including headless e-commerce, offline-first PWAs, and learning management systems.",
+  "focus": {
+    "currentFocus": "Full-stack development with Next.js (App Router), Node.js, and PostgreSQL/MongoDB",
+    "workingOn": "Refining TypeScript patterns, database indexing, and backend test coverage",
+    "availability": "Open to remote engineering roles and contract work"
+  },
   "skills": {
     "frontend": [
-      "HTML5",
-      "CSS3",
+      "Next.js (App Router)",
+      "React 19",
+      "TypeScript",
       "JavaScript (ES6+)",
-      "React.js",
       "Tailwind CSS",
-      "Responsive Design",
-      "UI/UX Best Practices"
+      "Redux Toolkit",
+      "RTK Query",
+      "HTML5",
+      "CSS3"
     ],
     "backend": [
       "Node.js",
       "Express.js",
-      "RESTful API Development",
-      "MongoDB",
-      "Mongoose",
-      "Authentication & Authorization"
+      "REST APIs",
+      "Zod Validation",
+      "Role-Based Access Control (RBAC)",
+      "Better Auth",
+      "JWT Authentication"
     ],
-    "cmsTools": [
-      "WordPress (Theme & Plugin Customization)",
+    "databasesAndStorage": [
+      "PostgreSQL",
+      "MongoDB",
+      "Prisma ORM",
+      "Drizzle ORM",
+      "Dexie.js (IndexedDB)",
+      "Cloudflare R2 / S3"
+    ],
+    "integrationsAndPayments": [
+      "SSLCommerz",
+      "Stripe",
+      "Vimeo API (TUS Uploads)",
+      "Steadfast Courier API",
+      "Cloudinary"
+    ],
+    "devopsAndTools": [
       "Git & GitHub",
-      "XAMPP / Local Development",
-      "Video Editing (Premiere Pro, CapCut)"
+      "Postman",
+      "Vercel",
+      "Linux / VPS",
+      "PM2",
+      "Cloudflare"
     ]
   },
-  "services": [
-    "Custom Website Development",
-    "Full-Stack Web Applications",
-    "WordPress Development",
-    "UI/UX Implementation",
-    "Video Editing for Businesses & Creators"
-  ],
-  "projects": [
+  "featuredProjects": [
     {
-      "name": "AuctionG - Real-Time Bidding Platform",
-      "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS", "Stripe API"],
-      "description": "Full-stack real-time auction platform with live bidding, secure Stripe checkout, and seller trust verification."
+      "name": "Aurem — Headless E-Commerce Platform",
+      "tech": ["Next.js 16", "React 19", "TypeScript", "MongoDB", "Better Auth", "Tailwind CSS", "Cloudflare R2"],
+      "live": "https://ecommerce.ashikbuilds.app",
+      "summary": "Configurable multi-store e-commerce platform with atomic inventory locks and automated Steadfast courier dispatch."
     },
     {
-      "name": "TaskMaster - Team Collaboration App",
-      "tech": ["React", "Redux", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
-      "description": "Collaborative task management application with real-time kanban workflow and deadline tracking."
-    }
-  ],
-  "education": [
+      "name": "CashBook — Offline-First Financial Ledger (PWA)",
+      "tech": ["Next.js 15", "React 19", "TypeScript", "PostgreSQL", "Neon", "Drizzle ORM", "Dexie.js", "Zustand", "Zod"],
+      "live": "https://cashbook.ashikbuilds.app/",
+      "summary": "Progressive Web App with Dexie.js IndexedDB local-first speed and idempotent delta cloud sync."
+    },
     {
-      "degree": "B.Sc. in Computer Science & Engineering",
-      "institution": "University in Bangladesh",
-      "year": "Present"
+      "name": "VectorFitLab — Fitness LMS & Digital Commerce",
+      "tech": ["Next.js 16", "React 19", "TypeScript", "Node.js", "Express", "MongoDB", "Redux Toolkit", "SSLCommerz", "Vimeo API"],
+      "live": "https://vectorfitlab.com",
+      "summary": "Full-stack fitness education platform with Vimeo TUS video uploads and SSLCommerz payment workflows."
+    },
+    {
+      "name": "RedLabStudio — Video Course LMS",
+      "tech": ["Next.js 16", "React 19", "TypeScript", "Node.js", "Express", "MongoDB", "Redux Toolkit", "SSLCommerz", "Tiptap"],
+      "live": "https://redlabstudio.com",
+      "summary": "Comprehensive academy LMS with Tiptap lesson editor, automated enrollment, and digital certificate generation."
     }
-  ],
-  "certifications": [
-    "Complete Web Development (MERN Stack)",
-    "React.js Fundamentals & Advanced Patterns",
-    "WordPress Theme Development & Customization"
-  ],
-  "achievements": [
-    "Delivered 12+ production client web apps and scheduling tools.",
-    "Built personal brand 'BetterMe' to inspire fitness and self-improvement.",
-    "Organized orientation program for programming community Batch 15."
-  ],
-  "hobbies": [
-    "Calisthenics & Fitness Challenges",
-    "Content Creation & Editing",
-    "Reading Tech Blogs",
-    "Spiritual Growth & Learning"
-  ],
-  "languages": [
-    "Bengali (Native)",
-    "English (Fluent)"
   ]
 }

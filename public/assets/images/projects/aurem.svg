@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/>
+      <stop offset="50%" stop-color="#11111a"/>
+      <stop offset="100%" stop-color="#050508"/>
+    </linearGradient>
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="blob1" cx="30%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="blob2" cx="70%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+  <rect width="1200" height="750" fill="url(#blob1)"/>
+  <rect width="1200" height="750" fill="url(#blob2)"/>
+
+  <!-- Grid overlay -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40"/>
+    </pattern>
+    <rect width="1200" height="750" fill="url(#grid)"/>
+  </g>
+
+  <!-- Browser Frame Window Mockup -->
+  <g transform="translate(100, 80)" filter="url(#shadow)">
+    <!-- Window Outline -->
+    <rect width="1000" height="590" rx="16" fill="#14141e" stroke="#2a2a3e" stroke-width="1.5"/>
+    
+    <!-- Window Header -->
+    <rect width="1000" height="48" rx="16" fill="#1a1a27"/>
+    <rect y="32" width="1000" height="16" fill="#1a1a27"/>
+    <circle cx="28" cy="24" r="6" fill="#ef4444"/>
+    <circle cx="48" cy="24" r="6" fill="#f59e0b"/>
+    <circle cx="68" cy="24" r="6" fill="#10b981"/>
+
+    <!-- URL Bar -->
+    <rect x="180" y="12" width="640" height="24" rx="6" fill="#0d0d14"/>
+    <text x="500" y="28" fill="#9ca3af" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">https://ecommerce.ashikbuilds.app</text>
+
+    <!-- App Content Wireframe -->
+    <!-- Sidebar -->
+    <rect x="24" y="72" width="200" height="490" rx="10" fill="#1a1a28" stroke="#252538"/>
+    <rect x="44" y="96" width="120" height="20" rx="4" fill="url(#primaryGlow)"/>
+    <rect x="44" y="140" width="160" height="12" rx="3" fill="#2d2d42"/>
+    <rect x="44" y="168" width="140" height="12" rx="3" fill="#2d2d42"/>
+    <rect x="44" y="196" width="150" height="12" rx="3" fill="#2d2d42"/>
+    <rect x="44" y="224" width="130" height="12" rx="3" fill="#2d2d42"/>
+
+    <!-- Main Content Area -->
+    <rect x="248" y="72" width="728" height="140" rx="12" fill="#181824" stroke="#28283c"/>
+    <text x="280" y="124" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="32">Aurem — Headless E-Commerce</text>
+    <text x="280" y="156" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16">Atomic Inventory Updates · Better Auth · Cloudflare R2 · Steadfast Courier</text>
+    <rect x="280" y="174" width="90" height="22" rx="6" fill="#ec4899" fill-opacity="0.2"/>
+    <text x="325" y="189" fill="#f472b6" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Next.js 16</text>
+    <rect x="380" y="174" width="90" height="22" rx="6" fill="#8b5cf6" fill-opacity="0.2"/>
+    <text x="425" y="189" fill="#a78bfa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">React 19</text>
+    <rect x="480" y="174" width="90" height="22" rx="6" fill="#3b82f6" fill-opacity="0.2"/>
+    <text x="525" y="189" fill="#60a5fa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">MongoDB</text>
+
+    <!-- Product Cards Grid -->
+    <rect x="248" y="232" width="228" height="330" rx="10" fill="#1a1a27" stroke="#252538"/>
+    <rect x="264" y="248" width="196" height="150" rx="8" fill="#252538"/>
+    <rect x="264" y="416" width="150" height="14" rx="3" fill="#e4e4e7"/>
+    <rect x="264" y="440" width="80" height="12" rx="3" fill="#a1a1aa"/>
+    <rect x="264" y="510" width="196" height="36" rx="6" fill="url(#primaryGlow)"/>
+    <text x="362" y="533" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Add to Cart</text>
+
+    <rect x="496" y="232" width="228" height="330" rx="10" fill="#1a1a27" stroke="#252538"/>
+    <rect x="512" y="248" width="196" height="150" rx="8" fill="#252538"/>
+    <rect x="512" y="416" width="140" height="14" rx="3" fill="#e4e4e7"/>
+    <rect x="512" y="440" width="80" height="12" rx="3" fill="#a1a1aa"/>
+    <rect x="512" y="510" width="196" height="36" rx="6" fill="url(#primaryGlow)"/>
+    <text x="610" y="533" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Add to Cart</text>
+
+    <rect x="744" y="232" width="232" height="330" rx="10" fill="#1a1a27" stroke="#252538"/>
+    <rect x="760" y="248" width="200" height="150" rx="8" fill="#252538"/>
+    <rect x="760" y="416" width="160" height="14" rx="3" fill="#e4e4e7"/>
+    <rect x="760" y="440" width="80" height="12" rx="3" fill="#a1a1aa"/>
+    <rect x="760" y="510" width="200" height="36" rx="6" fill="url(#primaryGlow)"/>
+    <text x="860" y="533" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Add to Cart</text>
+  </g>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <linearGradient id="fitBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#120c05"/>
+      <stop offset="50%" stop-color="#1f1408"/>
+      <stop offset="100%" stop-color="#080502"/>
+    </linearGradient>
+    <linearGradient id="amberGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <radialGradient id="fitBlob" cx="40%" cy="20%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="fitShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#fitBg)"/>
+  <rect width="1200" height="750" fill="url(#fitBlob)"/>
+
+  <!-- Browser Frame -->
+  <g transform="translate(100, 80)" filter="url(#fitShadow)">
+    <rect width="1000" height="590" rx="16" fill="#17120a" stroke="#382816" stroke-width="1.5"/>
+    <rect width="1000" height="48" rx="16" fill="#241a0d"/>
+    <rect y="32" width="1000" height="16" fill="#241a0d"/>
+    <circle cx="28" cy="24" r="6" fill="#ef4444"/>
+    <circle cx="48" cy="24" r="6" fill="#f59e0b"/>
+    <circle cx="68" cy="24" r="6" fill="#10b981"/>
+
+    <!-- URL Bar -->
+    <rect x="180" y="12" width="640" height="24" rx="6" fill="#100b05"/>
+    <text x="500" y="28" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">https://vectorfitlab.com</text>
+
+    <!-- Top Banner -->
+    <rect x="32" y="72" width="936" height="130" rx="12" fill="#20160b" stroke="#3b2713"/>
+    <text x="60" y="120" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="30">VectorFitLab — Fitness LMS &amp; Commerce</text>
+    <text x="60" y="150" fill="#d4d4d8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15">Next.js 16 · Vimeo API (TUS Uploads) · SSLCommerz · Redux Toolkit · Zod Validation</text>
+    
+    <g transform="translate(60, 165)">
+      <rect width="130" height="22" rx="6" fill="#f59e0b" fill-opacity="0.2"/>
+      <text x="65" y="15" fill="#fcd34d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Vimeo Video Delivery</text>
+      <rect x="140" width="130" height="22" rx="6" fill="#ef4444" fill-opacity="0.2"/>
+      <text x="205" y="15" fill="#f87171" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">SSLCommerz Gateway</text>
+      <rect x="280" width="140" height="22" rx="6" fill="#8b5cf6" fill-opacity="0.2"/>
+      <text x="350" y="15" fill="#c084fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Admin/Trainer/Athlete RBAC</text>
+    </g>
+
+    <!-- Video LMS Player Layout Wireframe -->
+    <rect x="32" y="222" width="600" height="340" rx="12" fill="#261b0d" stroke="#422c15"/>
+    <!-- Video Player Preview -->
+    <rect x="48" y="238" width="568" height="240" rx="8" fill="#140d06"/>
+    <!-- Play button overlay -->
+    <circle cx="332" cy="358" r="32" fill="url(#amberGlow)" opacity="0.9"/>
+    <polygon points="326,346 344,358 326,370" fill="#ffffff"/>
+    <text x="56" y="512" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="16">Module 03: Hypertrophy &amp; Periodization Training</text>
+    <text x="56" y="534" fill="#a1a1aa" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Lesson 04 · 24 mins · High-Bitrate Vimeo Streaming</text>
+
+    <!-- Course Modules Sidebar -->
+    <rect x="652" y="222" width="316" height="340" rx="12" fill="#20160b" stroke="#3b2713"/>
+    <text x="672" y="254" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="15">Curriculum &amp; Progress</text>
+
+    <rect x="672" y="274" width="276" height="52" rx="8" fill="#2e1f10" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="688" y="296" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">01. Nutrition &amp; Macros</text>
+    <text x="688" y="314" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">✓ Completed</text>
+
+    <rect x="672" y="336" width="276" height="52" rx="8" fill="#2e1f10"/>
+    <text x="688" y="358" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">02. Form &amp; Biomechanics</text>
+    <text x="688" y="376" fill="#10b981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">✓ Completed</text>
+
+    <rect x="672" y="398" width="276" height="52" rx="8" fill="#3b2714" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="688" y="420" fill="#f59e0b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">03. Periodization Protocol</text>
+    <text x="688" y="438" fill="#fbbf24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">▶ Now Playing</text>
+
+    <rect x="672" y="460" width="276" height="52" rx="8" fill="#20160b" opacity="0.6"/>
+    <text x="688" y="482" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">04. Recovery &amp; Mobility</text>
+    <text x="688" y="500" fill="#71717a" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11">Locked</text>
+  </g>
+</svg>

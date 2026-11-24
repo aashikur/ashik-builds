@@ -9,43 +9,46 @@ import PricingSection from "@/pages/frontend/Home/sections/PricingSection2";
 import CTAGetInTouch from "@/pages/frontend/Home/sections/CTAGetInTouch";
 import FeaturedProjects from "@/pages/frontend/Home/sections/FeaturedProjects";
 import Reviews from "@/pages/frontend/Home/sections/Reviews";
-
+import ProjectDetails from "@/pages/frontend/Projects/ProjectDetails";
 
 const mainRoutes = createBrowserRouter([
   {
     path: "/",
-    element: <RootLayout></RootLayout>,
-    errorElement: <Error></Error>,
+    element: <RootLayout />,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        element: <Home />,
       },
       {
         path: "/about",
-        element: <About></About>,
+        element: <About />,
       },
       {
         path: "/projects",
-        element: <div className='min-h-svh flex items-center flex-col justify-center'>
-          <div className='min-h-svh flex items-center flex-col justify-center'>
-            <FeaturedProjects></FeaturedProjects>
+        element: (
+          <div className="min-h-svh pt-20">
+            <FeaturedProjects />
           </div>
-        </div>,
+        ),
       },
-
+      {
+        path: "/projects/:slug",
+        element: <ProjectDetails />,
+      },
       {
         path: "/services",
-        element: <div className='min-h-svh flex items-center flex-col justify-center'>
-          <div className='min-h-svh flex items-center flex-col justify-center'>
-            <ServicesSection></ServicesSection>
-            <PricingSection></PricingSection>
+        element: (
+          <div className="min-h-svh pt-20">
+            <ServicesSection />
+            <PricingSection />
           </div>
-        </div>,
+        ),
       },
       {
         path: "/skills",
-        element: <div>Skills</div>,
+        element: <div className="min-h-screen flex items-center justify-center text-xl">Skills Overview</div>,
       },
       {
         path: "/contact",
@@ -53,14 +56,13 @@ const mainRoutes = createBrowserRouter([
       },
       {
         path: "/reviews",
-        element:  <div className='min-h-svh flex items-center flex-col justify-center'>
-          <div className='min-h-svh flex items-center flex-col justify-center'>
-           <Reviews></Reviews>
-            <ServicesSection></ServicesSection>
+        element: (
+          <div className="min-h-svh pt-20">
+            <Reviews />
+            <ServicesSection />
           </div>
-        </div>,
+        ),
       },
-
     ],
   },
 ]);

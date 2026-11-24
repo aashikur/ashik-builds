@@ -37,9 +37,8 @@ const HeroContent = () => {
            Full-Stack <br/><span className="font-bold"> Developer</span> & <br/><span className="text-blue-500 font-bold">Creative {' '}</span> 
             Coder
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-300 opacity-70">
-            Deliver high-quality, responsive, and scalable web solutions in
-            record time using our streamlined workflow and modern tech stack.
+          <p className="mt-6 max-w-2xl text-lg text-gray-600 dark:text-gray-300 opacity-80 leading-relaxed">
+            I engineer high-performance web applications with Next.js, React, and Node.js — focusing on resilient backend architecture, database optimization, and scalable headless platforms.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-start gap-4">
          <a href="#contactSection">
